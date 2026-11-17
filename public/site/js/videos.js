@@ -84,3 +84,35 @@
     });
   });
 })();
+/* Channel filter for the video library */
+(function () {
+  var chips = document.querySelectorAll('[data-vm-filter]');
+  if (!chips.length) return;
+  var cards = document.querySelectorAll('.vm-card');
+  var countEl = document.querySelector('[data-vm-count]');
+  var empty = document.querySelector('.vm-empty');
+  function apply(filter) {
+    var shown = 0;
+    cards.forEach(function (card) {
+      var isDup = card.classList.contains('vm-card--dup');
+      var match = filter === 'all' ? !isDup : card.dataset.ch === filter;
+      card.hidden = !match;
+      if (match) {
+        shown++;
+        card.style.animation = 'none';
+        void card.offsetWidth;
+        card.style.animation = '';
+      }
+    });
+    if (countEl) countEl.textContent = filter === 'all' ? shown + 1 : shown;
+    if (empty) empty.hidden = shown > 0;
+  }
+  chips.forEach(function (chip) {
+    chip.addEventListener('click', function () {
+      chips.forEach(function (c) { c.classList.remove('is-active'); c.setAttribute('aria-pressed', 'false'); });
+      chip.classList.add('is-active');
+      chip.setAttribute('aria-pressed', 'true');
+      apply(chip.dataset.vmFilter);
+    });
+  });
+})();
