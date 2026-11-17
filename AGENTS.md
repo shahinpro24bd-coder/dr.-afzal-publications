@@ -28,3 +28,7 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project structure
+- The actual website is a static HTML/CSS/JS site in `public/site/` (pages in `public/site/html/`); `/` only redirects there. Why: the user maintains it as a plain HTML site and downloads it as a ZIP.
+- New pages in `public/site/html/` reuse the shared navbar/footer markup and keep their own styles in a page-scoped CSS file (e.g. `css/publications.css`, all rules under one root class). Why: the shared Bootstrap/theme CSS is large and fragile; scoping avoids side effects on other pages.
