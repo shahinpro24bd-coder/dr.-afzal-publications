@@ -149,6 +149,10 @@
 .nhero h1 .nhero__thin{display:block;font-family:'Playfair Display',serif;font-weight:800;font-style:italic;font-size:clamp(16px,2vw,26px);letter-spacing:1.5px;text-transform:uppercase;color:#0463FA;margin-bottom:10px}
 .nhero__grad{background:linear-gradient(105deg,#0463FA 0%,#3D8BFF 45%,#7dd9ee 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 4px 14px rgba(61,139,255,.28))}
 .nhero__rule{width:120px;height:4px;margin:24px 0 18px;border-radius:2px;background:linear-gradient(90deg,#3D8BFF,rgba(61,139,255,0))}
+.nhero__ack{display:flex;align-items:center;flex-wrap:wrap;gap:14px;margin:24px 0 18px}
+.nhero__ack .nhero__rule{margin:0;flex:0 0 auto}
+.nhero__gold{display:inline-flex;align-items:center;gap:8px;padding:7px 14px 7px 11px;border-radius:999px;background:linear-gradient(180deg,rgba(255,255,255,.94),rgba(255,249,232,.9));border:1px solid rgba(176,132,29,.34);box-shadow:0 10px 26px -18px rgba(154,110,20,.8);font:700 10.5px/1 'Montserrat',sans-serif;letter-spacing:1.7px;text-transform:uppercase;color:#8a6412;white-space:nowrap}
+.nhero__gold i{font-size:12.5px;color:#c1922a}
 .nhero__lead{max-width:540px;font:600 17px/1.7 'Montserrat',sans-serif;color:#2d3a44}
 .nhero__lead strong{color:#0463FA;font-weight:800}
 .nhero__cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
@@ -187,7 +191,7 @@
 .nhd1{animation-delay:.05s}.nhd2{animation-delay:.18s}.nhd3{animation-delay:.3s}.nhd4{animation-delay:.42s}.nhd5{animation-delay:.54s}
 @keyframes nhrise{to{opacity:1;transform:none}}
 @media (max-width:991.98px){.nhero__inner{grid-template-columns:1fr;gap:44px;text-align:center}
- .nhero__lead{margin:0 auto}.nhero__rule{margin-left:auto;margin-right:auto}.nhero__cta{justify-content:center}
+ .nhero__lead{margin:0 auto}.nhero__rule{margin-left:auto;margin-right:auto}.nhero__cta{justify-content:center}.nhero__ack{justify-content:center}
  .nhero__visual{order:-1}.nhero__chip--1{left:-2%}.nhero__chip--2{right:-2%}}
 @media (max-width:767.98px){
  .nhero{padding:40px 0 56px}
@@ -197,6 +201,9 @@
  .nhero__eyebrow{font-size:10.5px;letter-spacing:1.2px;padding:7px 13px;max-width:100%;text-align:left}
  .nhero__lead{font-size:14.5px;line-height:1.75;max-width:100%}
  .nhero__rule{width:80px;height:3px;margin:16px auto 14px}
+ .nhero__ack{gap:11px;margin:16px 0 14px}
+ .nhero__gold{padding:6px 12px 6px 9px;font-size:9.5px;letter-spacing:1.3px}
+ .nhero__gold i{font-size:11px}
  .nhero__cta{gap:10px;margin-top:22px}
  .nhero__btn{width:100%;justify-content:center;padding:14px 20px;font-size:13.5px}
  .nhero__facts{grid-template-columns:1fr;gap:10px;margin-top:22px;max-width:100%}
@@ -229,7 +236,10 @@
 <span class="nhero__thin">Vitreo-Retina &amp; Phaco Surgery</span>
           Dr. <span class="nhero__grad">Md. Afzal Mahfuzullah</span>
 </h1>
-<div class="nhero__rule nhrise nhd2"></div>
+<div class="nhero__ack nhrise nhd2">
+<div class="nhero__rule"></div>
+<span class="nhero__gold"><i class="fas fa-medal"></i>Gold Medalist</span>
+</div>
 <p class="nhero__lead nhrise nhd3">MBBS, MCPS, FCPS (Ophthalmology) — Fellow in Retina &amp; Vitreous (IEH), Fellowship in Vitreo-Retina (Bangladesh &amp; India). Associate Professor (Vitreo-Retina), Department of Ophthalmology, Bangladesh Medical University (BMU) &amp; Consultant Ophthalmologist, Vision Eye Hospital, 299, Green Road, Dhaka. Joint Secretary General, Bangladesh Vitreo-Retina Society (BVRS). <strong>Cataract, Retina &amp; Laser surgery.</strong></p>
 <div class="nhero__cta nhrise nhd4">
 <a class="nhero__btn nhero__btn--primary" href="tel:+8809610244123">Call: 09610244123 <i class="fas fa-arrow-right"></i></a>
