@@ -75,7 +75,7 @@
 .trn__top{display:flex;align-items:center;justify-content:space-between;gap:12px}
 .trn__num{
   font-family:'Cormorant Garamond',serif;font-size:2.6rem;font-weight:600;
-  line-height:1;color:rgba(255,255,255,.5);
+  line-height:1;color:rgba(196,220,255,.8);
 }
 .trn__pill{
   display:inline-flex;align-items:center;gap:7px;padding:6px 13px;border-radius:50px;
@@ -106,7 +106,7 @@
 
 /* ---- foot strip ---- */
 .trn__foot{
-  display:flex;flex-wrap:wrap;align-items:center;gap:12px clamp(18px,3vw,34px);
+  display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px clamp(18px,3vw,34px);
   margin-top:clamp(28px,3.4vw,46px);padding-top:22px;
   border-top:1px solid rgba(255,255,255,.12);
 }
@@ -127,6 +127,6 @@
   .trn__num{font-size:2.1rem}
   .trn__title{letter-spacing:-.8px;line-height:1.2}
   .trn__title br{display:none}
-  .trn__foot{gap:10px 20px}
+  .trn__foot{gap:10px 20px;justify-content:flex-start}
 }
 @media (prefers-reduced-motion:reduce){.trn__card{transition:none}}
