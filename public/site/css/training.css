@@ -39,6 +39,7 @@
 }
 .trn__title em{
   font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;letter-spacing:0;
+  padding-right:.16em;
   background:linear-gradient(96deg,#7db4ff,#d6e9ff 58%,#7db4ff);
   -webkit-background-clip:text;background-clip:text;color:transparent;
 }
