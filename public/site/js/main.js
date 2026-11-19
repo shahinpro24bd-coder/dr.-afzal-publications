@@ -412,9 +412,9 @@ const slider = document.getElementById('slider');
         'vision-eye-logo.webp', 'doctor-main.webp', 'doctor-clinic.webp',
         'headers/header-about.webp', 'headers/header-services.webp',
         'headers/header-video.webp', 'headers/header-contact.webp',
-        'cataractsurgery.webp', 'retinamanagement.webp', 'glaucomamanagement.webp',
-        'pediatriceyecare.webp', 'refractive.webp', 'comprehensiveeyecheckup.webp',
-        'dryeye.webp', 'minorocular.webp',
+        'services/cataract-surgery.webp', 'services/retina-management.webp', 'services/glaucoma-management.webp',
+        'services/pediatric-eye-care.webp', 'services/refractive-correction.webp', 'services/eye-checkup.webp',
+        'services/dry-eye-care.webp', 'services/minor-procedures.webp',
         'achievements/apvrs2026-award-ceremony-sm.webp',
         'achievements/apvrs2026-microsurgical-training-sm.webp'
     ];

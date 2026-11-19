@@ -2222,6 +2222,7 @@
 }
 
 .serrr2 img,.serrr4 img,.serrr6 img,.serrr8 img,.serrr10 img,.serrr12 img{
+    object-position:50% 22%;
     transition:transform .7s cubic-bezier(.2,.8,.25,1);
 }
 

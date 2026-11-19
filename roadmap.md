@@ -7,3 +7,4 @@
 - [x] Gold Medalist — small gold pill beside the accent bar under the name in the home hero
 - [x] Advanced Training box — 2nd position in the mobile hero (right under the portrait, before the three info cards)
 - [x] Photo gallery slideshow — home (12 highlights) and about (all 30 photos with collection filters); autoplay, swipe, thumbnails, full-screen view
+- [x] Service photos — 8 realistic service images featuring Dr. Afzal's face (Home + Services pages)
