@@ -20,6 +20,8 @@ export const Route = createFileRoute("/")({
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:image", content: "https://www.drafzalmahfuzullah.com/site/images/og-share.jpg" },
+      { name: "twitter:image", content: "https://www.drafzalmahfuzullah.com/site/images/og-share.jpg" },
     ],
   }),
   beforeLoad: () => {

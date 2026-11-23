@@ -9,3 +9,4 @@
 - [x] Photo gallery slideshow — home (12 highlights) and about (all 30 photos with collection filters); autoplay, swipe, thumbnails, full-screen view
 - [x] Service photos — 8 realistic service images featuring Dr. Afzal's face (Home + Services pages)
 - [x] Consultation hours — Sun/Mon/Tue corrected to 5:30–9:00 PM in every place they appear (footer, infobox, schedule card, prose range, JSON-LD); Wed 6:30–9:00 and Thu 5:30–8:00 kept as before
+- [x] Link share preview shows Dr. Afzal's photo (og:image on all pages)
